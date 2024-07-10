@@ -85,6 +85,13 @@ function handleMouseMove(e) {
    }
 }
 
+function handleTouchMove(e) {
+   const relativePositionX = e.touches[0].clientX - canvasNode.offsetLeft;
+   if (relativePositionX > 0 && relativePositionX < canvasNode.width) {
+      paddlePositionX = relativePositionX - paddleWidth / 2;
+   }
+}
+
 function handleKeyDown(e) {
    if (['Right', 'ArrowRight', 'd'].includes(e.key)) rightPressed = true;
    else if (['Left', 'ArrowLeft', 'a'].includes(e.key)) leftPressed = true;
@@ -223,6 +230,7 @@ backHomeButtons.forEach((button) => {
    });
 });
 
+document.addEventListener('touchmove', handleTouchMove);
 document.addEventListener('mousemove', handleMouseMove);
 document.addEventListener('keydown', handleKeyDown);
 document.addEventListener('keyup', handleKeyUp);

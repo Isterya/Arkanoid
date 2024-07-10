@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+   .game-descr {
+      padding: 20px;
+   }
+
+   .game-descr h1 {
+      font-size: 24px;
+   }
+
+   .game-descr p {
+      font-size: 16px;
+   }
+
+   .btn {
+      padding: 8px 16px;
+      font-size: 14px;
+   }
+
+   .mobile-message {
+      margin-top: 20px;
+      display: block;
+   }
+
+   .desktop-message {
+      display: none;
+   }
+
+   #arkanoid {
+      width: 100%;
+      height: auto;
+   }
+}
