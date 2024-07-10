@@ -4,11 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
     <title>Arkanoid</title>
 </head>
 
 <body>
+    <div class="screen visible">
+        <div class="game-descr">
+            <h1>Добро пожаловать в игру Арканоид!</h1>
+            <p>Арканоид - это классическая аркадная игра, в которой Вы управляете платформой для отбивания мяча и
+                разрушения кирпичей. Попробуйте свои силы!</p>
+            <button class="start-game btn">Начать игру</button>
+        </div>
+        <p class="win-counter">Побед: 0</p>
+        <p class="special-message"></p>
+    </div>
+    <div class="screen">
+        <canvas height="320" width="480" id="arkanoid"></canvas>
+    </div>
+    <div class="screen">
+        <div class="game-lose">Сожалеем, Вы проиграли. Может, Вам удобнее играть на <span>W A S D</span>?</div>
+        <button class="back-home btn">Вернуться в главное меню</button>
+    </div>
+    <div class="screen">
+        <div class="game-win">Наши поздравления. Вы одержали победу!</div>
+        <button class="back-home btn">Вернуться в главное меню</button>
+    </div>
 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

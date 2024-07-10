@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,
+body {
+   font-family: 'Roboto', sans-serif;
+   color: #000;
+   background-color: #fff;
+}
+
+#arkanoid {
+   background-color: #fff;
+   display: block;
+   margin: 0 auto;
+   box-shadow: 0 0 25px #ffc0cb;
+}
+
+.screen {
+   width: 100%;
+   height: 100vh;
+   display: none;
+   overflow: hidden;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.visible {
+   display: flex;
+}
+
+.game-descr {
+   background-color: #fff;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   max-width: 600px;
+   text-align: center;
+   animation: fadeIn 1s ease-in-out;
+}
+
+.game-descr h1 {
+   font-size: 28px;
+   margin-bottom: 20px;
+   color: #ffcc65;
+}
+
+.game-descr p {
+   font-size: 18px;
+   margin-bottom: 30px;
+}
+
+.game-lose span {
+   color: #ffcc65;
+}
+
+.win-counter {
+   position: absolute;
+   bottom: 40px;
+   left: 30px;
+}
+
+.special-message {
+   position: absolute;
+   bottom: 20px;
+   left: 30px;
+}
+
+.btn {
+   margin-top: 30px;
+   padding: 10px 20px;
+   background-color: #ffcc65;
+   color: #000;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s;
+}
+
+.btn:hover {
+   background-color: #ffa726;
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
